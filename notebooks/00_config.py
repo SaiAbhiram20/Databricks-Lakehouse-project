@@ -2,8 +2,10 @@
 # MAGIC %md
 # MAGIC # 00 · Shared config
 # MAGIC
-# MAGIC Every other notebook starts with `%run ./00_config`. That runs this notebook first, so the variables below
-# MAGIC (`CATALOG`, `SCHEMA`, paths…) are available everywhere and you only ever change them in **one** place.
+# MAGIC This is the **reference copy** of the settings. The same config cell is pasted at the top of every other
+# MAGIC notebook (`%run` did not share variables on some serverless setups, so each notebook is self-contained).
+# MAGIC If you change `CATALOG` or `SCHEMA`, change it in the first code cell of **each** notebook you use.
+# MAGIC You don't need to run this notebook.
 # MAGIC
 # MAGIC **Before you run it:** open a SQL cell and run `SHOW CATALOGS`. On Databricks **Free Edition** you will see
 # MAGIC a catalog called `workspace` (used below). On a paid workspace pick a catalog you may write to and change
